@@ -15,4 +15,11 @@ def test_cust_console_str():
     expected = '**********\n(var) is asigned or returns as "this is handy", of type <class \'str\'>\n**********\n'
     assert actual == expected
 
-    
+
+def test_cust_console_list():
+    array = [5, 3, 0, 9]
+    actual = custom_console_logger(array)
+    expected = '**********\n(var) is asigned or returns as "[5, 3, 0, 9]", of type <class \'list\'>\n**********\n'
+    assert actual == expected 
+
+
