@@ -45,10 +45,6 @@ def test_ht_add(ht):
     expected = True
     assert actual == expected
 
-    
-   
-    
-
 
 # @pytest.mark.skip('pending code')
 def test_ht_str(ht):
@@ -56,9 +52,16 @@ def test_ht_str(ht):
     expected = 'hashtable instance, size: 256'
     assert actual == expected
 
-@pytest.mark.skip('pending code')
+# @pytest.mark.skip('pending code')
 def test_ht_repr(ht):
     actual = ht.__repr__()
     expected = '3 entries found in HashTable'
     assert actual == expected
+
+
+def test_ht_records(ht):
+    actual = ht.__records__()
+    expected = 3
+    assert actual == expected
+
 

@@ -19,11 +19,12 @@ class HashTable:
         entries = 0
         for el in self._bucket:
             if el.__len__() == 0:
-                continue
+                pass
             else:
                 entries += int(el.__len__())
         return entries
     
+
 
     def _hash(self, key):
         sum = 0
